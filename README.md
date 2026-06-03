@@ -65,7 +65,6 @@ SQLSERVER_CONN_STR=Driver={ODBC Driver 18 for SQL Server};Server=YOUR_SERVER;Dat
 OLLAMA_EMBED_MODEL=nomic-embed-text
 ```
 
-Nie wrzucaj prawdziwego `.env` na GitHuba.
 
 ## Baza wektorowa
 
