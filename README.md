@@ -12,7 +12,7 @@ Prosty chatbot RAG oparty o:
 
 ```text
 komplet_api_bot_html/
-  agent_grph.py              # graf agenta, RAG, Chroma, funkcja chat_with_agent
+  agent_graph.py             # graf agenta, RAG, Chroma, funkcja chat_with_agent
   main.py                    # FastAPI i endpoint /chat
   index.html                 # prosty frontend
   script.js                  # komunikacja frontendu z API

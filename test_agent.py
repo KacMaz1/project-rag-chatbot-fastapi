@@ -1,4 +1,4 @@
-from agent_grph import chat_with_agent
+from agent_graph import chat_with_agent
 
 answer = chat_with_agent(
     user_message="o co cię wcześniej zapytałem?",

@@ -99,7 +99,7 @@ def retrieve_tool(query: str) -> str:
 tools = [retrieve_tool]
 model_with_tools = model.bind_tools(tools)
 
-def human_node(state: AgentState):
+def human_node(state: AgentState) -> AgentState:
     last_message = state["messages"][-1]
 
     if hasattr(last_message, "content"):
@@ -113,12 +113,9 @@ def human_node(state: AgentState):
         "llm_answer": last_message_text,
     })
 
-    return Command(
-        update={
-            "messages": [HumanMessage(content=user_response)],
-        },
-        goto="agent_node",
-    )
+    return {
+        "messages": [HumanMessage(content=user_response)]
+    }
 
 def llm_node(state: AgentState):
     system_prompt = SystemMessage(

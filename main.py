@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from agent_grph import chat_with_agent
+from agent_graph import chat_with_agent
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
